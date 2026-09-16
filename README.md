@@ -432,12 +432,6 @@ The two phases therefore provide a practical progression from **instruction exec
 
 <div align="center">
 
-## **MULTIPROGRAMMING OPERATING SYSTEM**
-
-### *From Machine Simulation to Memory Management*
-
-**C++ • MOS Phase 1 • MOS Phase 2 • Operating Systems**
-
 <br />
 
 • OS-MOS-SEM-II • AAYUSH RAHATE •
