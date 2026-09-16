@@ -1,0 +1,72 @@
+Hello! SYCSA G14                        
+NO ERROR
+-------------------------------------------
+JOB ID           : 1
+IC               : 2
+IR               : H   
+TIME USED  (TTC) : 4
+LINES USED (LLC) : 1
+-------------------------------------------
+
+
+OUT OF DATA
+-------------------------------------------
+JOB ID           : 2
+IC               : 0
+IR               : GD20
+TIME USED  (TTC) : 2
+LINES USED (LLC) : 0
+-------------------------------------------
+
+
+MOS PHASE 2                             
+LINE LIMIT EXCEEDED
+-------------------------------------------
+JOB ID           : 3
+IC               : 2
+IR               : PD20
+TIME USED  (TTC) : 4
+LINES USED (LLC) : 2
+-------------------------------------------
+
+
+TIME LIMIT EXCEEDED
+-------------------------------------------
+JOB ID           : 4
+IC               : 1
+IR               : SR20
+TIME USED  (TTC) : 4
+LINES USED (LLC) : 0
+-------------------------------------------
+
+
+OPCODE ERROR
+-------------------------------------------
+JOB ID           : 5
+IC               : 0
+IR               : XX20
+TIME USED  (TTC) : 1
+LINES USED (LLC) : 0
+-------------------------------------------
+
+
+OPERAND ERROR
+-------------------------------------------
+JOB ID           : 6
+IC               : 0
+IR               : GDX9
+TIME USED  (TTC) : 0
+LINES USED (LLC) : 0
+-------------------------------------------
+
+
+INVALID PAGE FAULT
+-------------------------------------------
+JOB ID           : 7
+IC               : 0
+IR               : LR20
+TIME USED  (TTC) : 1
+LINES USED (LLC) : 0
+-------------------------------------------
+
+

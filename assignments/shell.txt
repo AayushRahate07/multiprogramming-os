@@ -1,0 +1,91 @@
+#!/usr/bin/bash
+
+arr=(10 20 30)
+
+show() {
+    echo "Value: $1"
+}
+
+name=${1:-"Guest"}
+
+echo "User: $name"
+echo "Total Args: $#"
+echo "All Args: $@"
+
+for i in "${arr[@]}"
+do
+    echo "Array Value: $i"
+
+    if [ $i -gt 15 ]; then
+        echo "Greater than 15"
+    else
+        echo "Less than or equal to 15"
+    fi
+
+    show $i
+done
+
+count=1
+
+while [ $count -le 3 ]
+do
+    echo "While: $count"
+    count=$((count+1))
+done
+
+////////////////
+
+cities=(MUMBAI DUBAI LONDON PARIS)
+offsets=(0 -1 -4 -3)
+greetings=("Namaste" "Salaam" "Hello" "Bonjour")
+
+calculate_time() {
+    echo $(( $2 + offsets[$1] ))
+}
+
+echo "Enter source city:"
+read src
+
+echo "Enter destination city:"
+read dest
+
+echo "Enter base time (0-23):"
+read base
+
+src_up=${src^^}
+dest_up=${dest^^}
+
+total=${#cities[*]}
+
+for (( i=0; i<total; i++ ))
+do
+    if [ "${cities[$i]}" = "$src_up" ]; then
+        src_greet=${greetings[$i]}
+        src_time=$(calculate_time $i $base)
+    fi
+
+
+    if [ "${cities[$i]}" = "$dest_up" ]; then
+        dest_greet=${greetings[$i]}
+        dest_time=$(calculate_time $i $base)
+    fi
+done
+
+if [ -z "$src_time" ] || [ -z "$dest_time" ]; then
+    echo "Invalid city entered!"
+    exit 1
+fi
+
+echo "----------------------------"
+
+echo "Source: $src_up"
+echo "Greeting: $src_greet"
+echo "Time: $src_time:00"
+
+echo
+
+echo "Destination: $dest_up"
+echo "Greeting: $dest_greet"
+echo "Time: $dest_time:00"
+
+echo "----------------------------"
